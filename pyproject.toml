@@ -1,0 +1,2 @@
+[tool.pyright]
+include = ["CS50", "100DaysPython", "PyCS50", "PythonProject", "Unit-Test", "File-IO"]

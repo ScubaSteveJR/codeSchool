@@ -1,0 +1,11 @@
+SELECT (colomn name) FROM (file);  ## pulls all data from single file in one column of return text
+SELECT DISTINCT(column name) FROM (file);  ## pulls out column name and then each unique value in the column
+SELECT COUNT(*) FROM (file);  ## pulls out the amount of values in the entire file
+SELECT * FROM (file);  ## pulls all the content from the entire file
+SELECT COUNT(*) FROM (file) WHERE language = 'C' AND problem = 'Mario';  ## pulls number of values that contains BOTH values
+SELECT language, COUNT(*) FROM (file) GROUP BY language;  ## group unique values together and give a total for all uniques
+SELECT language, COUNT(*) FROM (file) GROUP BY language ORDER BY COUNT(*) DESC;  ## same as before but from most to least
+INSERT INTO (file) (column name, column name) VALUES ('SQL', 'Fiftyville');  ## adds the new VALUES into the respective columns
+UPDATE (file) SET (column name) = ('new value') WHERE (column name) = 'previous value';  ##find existing values and replaces them
+DELETE FROM (file) WHERE (column name) = (name of value);  ## delete from table
+SELECT * FROM (table name) JOIN ON (table name.column name = table name.column name);  ##pulls values from multiple tables to make a new table 
